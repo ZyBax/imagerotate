@@ -9,7 +9,11 @@
       var images = ["image1.png", "image2.png", "image3.png"];
       var randomImage = images[Math.floor(Math.random() * images.length)];
       document.querySelector("img").src = randomImage;
-    }
+      window.onload = function() {
+  var images = ["image1.png", "image2.png", "image3.png"];
+  var randomImage = images[Math.floor(Math.random() * images.length)];
+  document.querySelector("img").src = randomImage;
+    };
   </script>
 </head>
 <body>
