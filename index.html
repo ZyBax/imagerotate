@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Changer</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // JavaScript code to randomly select an image and change the src attribute of the img element
+    function rotateImage() {
+      var images = ["image1.png", "image2.png", "image3.png"];
+      var randomImage = images[Math.floor(Math.random() * images.length)];
+      document.querySelector("img").src = randomImage;
+    }
+  </script>
+</head>
+<body>
+  <div id="image-container">
+    <img src="image1.png" alt="Image">
+  </div>
+  <button type="button" onclick="rotateImage()">Rotate</button>
+  <p id="image-name">Image: Lorem ipsum.png</p>
+  <a href="https://github.com/user/repo">Source code</a>
+</body>
+</html>
